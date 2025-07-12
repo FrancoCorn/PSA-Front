@@ -1,0 +1,102 @@
+.versionTableContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px; /* Ajusta el margen según tus necesidades */
+}
+
+
+.searchBar {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  width: 40%;
+  border-radius: 5px;
+  margin-bottom: 10px; /* Ajusta el margen según tus necesidades */
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.searchBar input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #c9c9c9;
+  border-radius: 5px;
+  margin-right: 10px;
+  color: #333;
+  background-color: #ffffff;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.searchBar input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.ticketTable {
+  border-collapse: collapse;
+  width: 50%;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.ticketTable th,
+.ticketTable td {
+  border: 1px solid #cfcfcf;
+  padding: 10px;
+  text-align: center;
+  color: #333;
+}
+
+.ticketTable th {
+  background-color: #444;
+  color: #ffffff;
+  border: none;
+  padding: 15px;
+  font-size: 14px;
+}
+
+.ticketTable td {
+  background-color: #ffffff;
+  transition: background-color 0.3s ease;
+  max-width: 300px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.ticketTable tr:hover td {
+  background-color: #e6f7ff;
+}
+
+.paginationButtons {
+  margin-top: 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.paginationButtons button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  border: 1px solid #007bff;
+  cursor: pointer;
+  color: #ffffff;
+  border-radius: 5px;
+  margin-left: 10px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.paginationButtons button:hover {
+  background-color: #0056b3;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.paginationButtons button:disabled {
+  background-color: #ced4da;
+  border-color: #ced4da;
+  cursor: not-allowed;
+}

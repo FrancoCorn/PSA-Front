@@ -1,0 +1,62 @@
+.tableContainer {
+  margin-left: 0px;
+  margin-right: 20px;
+  width: calc(100% - 220px);
+}
+
+.ticketTable {
+  border-collapse: collapse;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 100%;
+}
+
+.ticketTable th,
+.ticketTable td {
+  border: 1px solid #cfcfcf;
+  padding: 10px;
+  text-align: left;
+  color: #333;
+}
+
+.ticketTable th {
+  background-color: #444;
+  color: #ffffff;
+  border: none;
+  padding: 15px;
+  font-size: 14px;
+}
+
+.ticketTable td {
+  background-color: #ffffff;
+  transition: background-color 0.3s ease;
+  max-width: 300px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.ticketTable tr:hover td {
+  background-color: #e6f7ff;
+}
+
+.emptyRow {
+  text-align: center;
+  color: #999;
+}
+
+.selectedRow {
+  border: 2px solid black;
+}
+
+.paginationContainer {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.paginationContainer button {
+  margin: 0 5px;
+  padding: 5px 10px;
+}

@@ -1,0 +1,55 @@
+.navBarContainer {
+  font-family: Arial, sans-serif;
+  background-color: #343a40; /* Fondo oscuro pero distinto al de los botones */
+  color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  display: flex;
+  align-items: center; 
+  padding: 10px 20px;
+}
+
+.logoContainer {
+  background-color: #007bff; /* Color azul para el logo */
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.logo {
+  font-size: 36px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.navigation {
+  margin-left: 20px;
+  display: flex;
+  border-radius: 5px;
+}
+
+.navigation button {
+  padding: 15px 30px;
+  border: none;
+  cursor: pointer;
+  color: #343a40; /* Texto oscuro */
+  background-color: #e9ecef; /* Fondo claro distinto al de los botones */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+
+.navigation button:hover {
+  background-color: #ced4da; /* Gris claro en hover */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navigation .active {
+  background-color: #adb5bd; /* Gris medio para el botón activo */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navigation button:not(:last-child) {
+  margin-right: 10px;
+}

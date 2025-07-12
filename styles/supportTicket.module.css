@@ -1,0 +1,157 @@
+.supportContainer {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  color: #000000;
+  min-height: 100vh;
+}
+
+.mainContent {
+  padding: 20px;
+}
+
+.searchBar {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 5px;
+  margin-right: 2px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.searchBar input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #c9c9c9;
+  border-radius: 5px;
+
+  
+  color: #333;
+  background-color: #ffffff;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.searchBar input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.searchBar button {
+  padding: 10px 29px;
+  background-color: #007bff;
+  border: 1px solid #007bff;
+  cursor: pointer;
+  color: #ffffff;
+  border-radius: 5px;
+  margin-left: 40px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.searchBar button:hover {
+  background-color: #0056b3;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.buttonAndTable {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.newTicket {
+  padding: 10px 20px;
+  background-color: #007bff;
+  border: 1px solid #007bff;
+  cursor: pointer;
+  color: #ffffff;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.newTicket:hover {
+  background-color: #0056b3;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.versionSelectionContainer {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.versionSelectionContainer select{
+  width: 70%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.selectedVersionBanner {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.selectedVersionBanner span {
+  margin-right: 30px;
+}
+
+.selectedVersionBanner button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  border: 1px solid #007bff;
+  cursor: pointer;
+  color: #ffffff;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.selectedVersionBanner button:hover {
+  background-color: #0056b3;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.descriptionContainer {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  width: 700px; 
+  margin: 20px auto; 
+}
+.descriptionText {
+  text-align: left;
+  padding: 20px;
+}
+
+.closeButton {
+  float: right;
+  margin-top: 20px;
+}
+
+.sortableHeader {
+  cursor: pointer;
+}
+
+.sortableHeader::after {
+  content: ' \25B2';
+  font-size: 0.8em;
+}
+
+.sortableHeader.desc::after {
+  content: ' \25BC'; 
+}
+
+.sortableHeader.asc::after {
+  content: ' \25B2'; 
+}
